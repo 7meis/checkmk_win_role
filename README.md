@@ -1,12 +1,18 @@
 # Checkmk extension for Windows Server Role discovery
 
-![build](https://github.com/jiuka/checkmk_win_role/workflows/build/badge.svg)
-![flake8](https://github.com/jiuka/checkmk_win_role/workflows/Lint/badge.svg)
-![pytest](https://github.com/jiuka/checkmk_win_role/workflows/pytest/badge.svg)
+![build](https://github.com/7meis/checkmk_win_role/workflows/build/badge.svg)
+![flake8](https://github.com/7meis/checkmk_win_role/workflows/Lint/badge.svg)
+![pytest](https://github.com/7meis/checkmk_win_role/workflows/pytest/badge.svg)
 
 ## Description
 
-This Extension deploys a agent plugin to windows server to discover host lables for the installed server roles.
+This Extension deploys a agent plugin to windows server to discover host lables for the installed windows server roles like Active Directory, DNS etc.
+
+## How to use
+- Download the artefact from this Repo - GitHub Actions - Build Task
+- Install mkp package to your site
+- Configure the WATO rule named "Windows Server Role Label Discovery" and deploy the plugin to all Windows hosts (use CheckMK labels to assign the rule dynamic)
+- Bake the agents and wait for discover the winrole labels
 
 ## Development
 
