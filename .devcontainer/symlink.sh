@@ -10,3 +10,5 @@ ln -sv $WORKSPACE/agent_based $OMD_ROOT/local/lib/check_mk/base/plugins/agent_ba
 
 rm -rfv $OMD_ROOT/local/lib/nagios/plugins
 ln -sv $WORKSPACE/nagios_plugins $OMD_ROOT/local/lib/nagios/plugins
+
+htpasswd -b $OMD_ROOT/etc/htpasswd cmkadmin cmkadmin
