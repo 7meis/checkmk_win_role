@@ -1,7 +1,7 @@
 {
     'author': u'Marius Rieder <marius.rieder@scs.ch>',
     'description': u'This package discovers Windows Server roles',
-    'download_url': 'https://github.com/jiuka/checkmk_win_role/releases',
+    'download_url': 'https://github.com/7meis/checkmk_win_role/releases',
     'files': {
         'agent_based': ['win_role.py'],
         'agents': [
